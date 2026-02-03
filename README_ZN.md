@@ -246,7 +246,7 @@ $$b_{i,j}' = b_{i,j} \cos(\phi_{i,j}) + a_{i,j} \sin(\phi_{i,j})$$
 void self_attention(tensor_t attn_val, tensor_t q, tensor_t k, tensor_t v, float scale);
 ```
 
-为查询张量`q`、键张量`k`和值张量`v`计算自注意力。如果需要，你应该在进行此计算之前连接kvcache张量。
+为查询张量`q`、键张量`k`和值张量`v`计算自注意力。
 
 $$
 A = Q K^\top * scale \\
